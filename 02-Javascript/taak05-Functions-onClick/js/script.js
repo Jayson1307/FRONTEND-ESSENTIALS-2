@@ -21,7 +21,7 @@ function maakRood(kleur){
 
 
 
-function veranderKleur(kleur){
-    document.querySelector("body").style.backgroundColor = kleur;
+function groenDoorParameter(kleur){
+    document.querySelector("body").style.backgroundColor = "green";
     //TODO: verander de achtergrond kleur op basis van de meegegeven waarde in de kleur parameter
 }
