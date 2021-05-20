@@ -19,5 +19,5 @@ for(i = 0; i < topFilms.length; i++){
 }
 
 function kiesFilm(){
-
+    eerst = prompt("welke film moet er op de eerste plek staan?")
 }
