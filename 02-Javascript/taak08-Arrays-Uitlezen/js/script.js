@@ -32,4 +32,15 @@ document.querySelector(".film9-naam").innerHTML = topFilms[8];
 document.querySelector(".film10-ranking").innerHTML = 10;
 document.querySelector(".film10-naam").innerHTML = topFilms[9];
 
+function kiesFavorieteFilm(){
+    Nummer = prompt("wat is je favoriete nummer film");
+    if(Nummer < 11){
+        console.log(topFilms[Nummer-1]);
+        document.querySelector(".film"+Nummer+"-naam").style.backgroundColor = "blue";
+        document.querySelector(".film"+Nummer+"-naam").style.color = "white";
+    }
+    else{
+        alert("sorry dat nummer staat niet in de lijst");
+    }
+}
 
