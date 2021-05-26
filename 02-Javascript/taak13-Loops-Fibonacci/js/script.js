@@ -1,5 +1,9 @@
-var fibonacci = [0,1];
-for (fibonacci = 0; fibonacci < 90;) {
- fibonacci=[0,1,2,3,5,]
+a = 0, b = 1, f = 1;
+for(f = 1; f < 88; f++) {
+    f = a + b;
+    a = b;
+    b = f;
+    console.log(f)
 }
+
 
