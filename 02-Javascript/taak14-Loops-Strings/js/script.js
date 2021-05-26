@@ -1,9 +1,11 @@
-function outputLetters(str){
-    for (let i = 0; i < str.length; i++) {
-        const element = array[i];
-        
+function outputLetters(string){
+    for (let i = 0; i < string.length; i++) {
+        console.log(string[i]);
     }
 }
 
 var voorbeeldString = "Dit is een array van letters";
-console.log(voorbeeldString.length); // geeft terug: 
+var voorbeeldString2 = "Dit is ees";
+console.log(voorbeeldString.length); // geeft ter
+string = prompt("voer hier een string in");
+outputLetters(string); 
