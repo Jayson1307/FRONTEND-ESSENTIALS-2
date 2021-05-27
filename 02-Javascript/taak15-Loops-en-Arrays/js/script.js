@@ -22,3 +22,17 @@ for (let i = 0; i < spelersScore.length; i++) {
 }
 
 //Schrijf hieronder je code
+var i;
+for (i = 0; i < spelersScore.length; i++) {
+    rondePunten += spelersScore[i] + "<br>";
+    
+
+ var scorespeler
+
+    for (let x = 0; x < rondePunten.length; x++) {
+        
+      scorespeler=x  
+      
+    }
+ console.log("speler " +i+ " score is "+scorespeler)
+}
