@@ -7,11 +7,10 @@ function rondaf(getal, aantalplekkenachterkomma){
     return Math.round(getal * x)/x;
 }
 
-for (let i=0; i <arrProductPrijs; i++){
-    for(let j=0; j<arrProductKorting.length; j++){
-        totaal=arrProductPrijs[i] * arrProductKorting[j];
-        console.log(totaal)
-        totaal+=arrProductPrijs[i]
+for (let i = 0; i < arrProductPrijs.length; i++) {
+    for (let j = 0; j < arrProductKorting.length; j++) {
+        console.log(arrProductPrijs[i] * arrProductKorting[j]);
+        
     }
+    console.log("---");
 }
-console.log(totaal)
