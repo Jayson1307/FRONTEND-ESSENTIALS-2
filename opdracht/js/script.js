@@ -55,6 +55,7 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     for(let m = 0; m < intMod; m++){
         outputString += strCodeword[m]
     }
+    console.log("Codeword full: " + outputString);
     return outputString;
 }
 
@@ -88,5 +89,5 @@ function versleutel(){
 }
 
 function ontsleutel(){
-    //TODO: opdracht 3
+    
 }
