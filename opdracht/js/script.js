@@ -49,6 +49,12 @@ function vermenigvuldigCodeword(strInput, strCodeword){
     //TODO: opdracht 2
 
     // console.log("Codeword full: " + outputString);
+    for(let l=0; l < intDiv; l++){
+        outputString += strCodeword
+    } 
+    for(let m = 0; m < intMod; m++){
+        outputString += strCodeword[m]
+    }
     return outputString;
 }
 
