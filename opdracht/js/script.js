@@ -28,8 +28,8 @@ function positiesNaarString(arr){
     var outputString = "";
     //TODO: opdracht 1- check
     for(let k=0; k < arr.length; k++) {
-         let ding = arr[k]
-         outputString = outputString + strAlfabet
+         let ding = arr[k];
+         outputString += strAlfabet[ding];
     }
 
     return outputString;
