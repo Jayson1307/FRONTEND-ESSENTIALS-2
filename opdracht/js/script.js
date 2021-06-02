@@ -1,3 +1,4 @@
+
 strAlfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var strInput = "";          //input string
@@ -83,11 +84,29 @@ function versleutel(){
     }
 
 
-    // console.log("versleuteld bericht: " + positiesNaarString(outputArray));
-    // document.querySelector("#output").value = positiesNaarString(outputArray);
+     console.log("versleuteld bericht: " + positiesNaarString(outputArray));
+     document.querySelector("#output").value = positiesNaarString(outputArray);
     strCodewordFull = [];
 }
 
 function ontsleutel(){
+    strCodeword = document.querySelector("#codeword").value; 
+    outputString = document.querySelector("#output").value;
     
+    strCodewordFull = vermenigvuldigCodeword(outputString, strCodeword);
+    arrCodewordPosities = stringNaarPosities(strCodewordFull);
+    arroutputPosities = stringNaarPosities(outputString);
+    //console.log(strCodeword + strCodewordFull + arrCodewordPosities + arroutputPosities);
+
+    outputArray = [];
+    for (let p = 0; p < arroutputPosities.length; p++) {
+        if(arroutputPosities[p] - arrCodewordPosities[p] < 0){
+            outputArray.push((arroutputPosities[p] - arrCodewordPosities[p])+26);
+        }
+        else{ 
+            outputArray.push(arroutputPosities[p] - arrCodewordPosities[p]);
+        }
+        
+    }
+    document.querySelector("#output").value = positiesNaarString(outputArray);
 }
