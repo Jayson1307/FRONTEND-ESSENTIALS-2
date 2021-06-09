@@ -26,11 +26,13 @@ function stringNaarPosities(str){
 
 //Zet een array met posities om naar een string
 function positiesNaarString(arr){
+
+  
     var outputString = "";
     //TODO: opdracht 1- check
     for(let k=0; k < arr.length; k++) {
-         let ding = arr[k];
-         outputString += strAlfabet[ding];
+         let positie = arr[k];
+         outputString += strAlfabet[positie];
     }
 
     return outputString;
@@ -54,6 +56,7 @@ function vermenigvuldigCodeword(strInput, strCodeword){
         outputString += strCodeword
     } 
     for(var m = 0; m < intMod; m++){
+        
         outputString += strCodeword[m]
     }
     console.log("Codeword full: " + outputString);
@@ -108,5 +111,6 @@ function ontsleutel(){
         }
         
     }
+    console.log("outputArray" + outputArray);
     document.querySelector("#output").value = positiesNaarString(outputArray);
 }
